@@ -1,4 +1,5 @@
 import React from "react";
+import MealItemForm from "../MealItemForm/MealItemForm";
 
 import classes from "./MealItem.module.css";
 
@@ -12,7 +13,7 @@ const MealItem = (props) => {
         <p className={classes.description}>{meal.description}</p>
         <p className={classes.price}>{`$${meal.price}`}</p>
       </div>
-      <button>+Add</button>
+      <MealItemForm />
     </div>
   );
 };

@@ -1,18 +1,17 @@
 import React from "react";
+import Input from "../../UI/Input/Input";
 
-import MealItem from "./MealItem/MealItem";
 import classes from "./MealItemForm.module.css";
 
-import DUMMY_MEALS from "../../../utils/dummy-meals.js";
-
 const MealItemForm = () => {
-  console.log(DUMMY_MEALS);
   return (
-    <li className={classes.form}>
-      {DUMMY_MEALS.map((meal) => {
-        return <MealItem key={meal.id} meal={meal}></MealItem>;
-      })}
-    </li>
+    <div className={classes.form}>
+      <form>
+        <Input label="Amount" type="number" min="0">
+        </Input>
+        <button>+Add</button>
+      </form>
+    </div>
   );
 };
 
