@@ -13,8 +13,8 @@ const AvailableMeals = () => {
       <ul>
         {DUMMY_MEALS.map((meal) => {
           return (
-            <li>
-              <MealItem key={meal.id} meal={meal}></MealItem>
+            <li key={meal.id}>
+              <MealItem meal={meal}></MealItem>
             </li>
           );
         })}
