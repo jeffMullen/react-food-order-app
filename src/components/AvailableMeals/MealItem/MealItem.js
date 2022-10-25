@@ -5,7 +5,7 @@ import classes from "./MealItem.module.css";
 
 const MealItem = (props) => {
   const { meal } = props;
-  console.log(meal);
+  
   return (
     <div className={classes.meal}>
       <div>

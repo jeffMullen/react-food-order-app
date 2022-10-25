@@ -8,8 +8,10 @@ function App() {
   return (
     <>
       <Header />
-      <MealsSummary />
-      <AvailableMeals />
+      <main>
+        <MealsSummary />
+        <AvailableMeals />
+      </main>
     </>
   );
 }

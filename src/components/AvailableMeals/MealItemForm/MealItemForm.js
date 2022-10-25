@@ -15,9 +15,14 @@ const MealItemForm = () => {
       <form>
         <Input
           label="Amount"
-          type="number"
-          min="0"
-          defaultValue={amount}
+          input={{
+            id: "amount",
+            type: "number",
+            min: "1",
+            max: "5",
+            step: "1",
+            defaultValue: "1",
+          }}
           onChange={amountChangeHandler}
         ></Input>
         <button>+Add</button>
