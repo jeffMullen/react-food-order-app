@@ -6,7 +6,9 @@ import classes from "./HeaderCartButton.module.css";
 const HeaderCartButton = () => {
   return (
     <button className={classes.button}>
-      <CartIcon className={classes.icon} />
+      <span className={classes.icon}>
+        <CartIcon />
+      </span>
       <span>Your Cart</span>
       <span className={classes.badge}>0</span>
     </button>
